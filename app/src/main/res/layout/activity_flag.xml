@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlagActivity">
+
+  <Button
+      android:id="@+id/homeBtn2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="28dp"
+      android:layout_marginBottom="24dp"
+      android:text="Games"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/flagImageView"
+      android:layout_width="339dp"
+      android:layout_height="259dp"
+      android:layout_marginTop="76dp"
+      android:contentDescription="flag"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/america" />
+
+  <EditText
+      android:id="@+id/countryEditText"
+      android:layout_width="0dp"
+      android:layout_height="51dp"
+      android:autofillHints="country"
+      android:ems="10"
+      android:hint="enter country"
+      android:inputType="textPersonName"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="@+id/flagImageView"
+      app:layout_constraintEnd_toEndOf="@+id/flagImageView"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView"
+      app:layout_constraintTop_toBottomOf="@+id/flagImageView" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="0dp"
+      android:layout_height="51dp"
+      android:text="Country: "
+      android:textColor="@color/black"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="@+id/flagImageView"
+      app:layout_constraintStart_toStartOf="@+id/flagImageView"
+      app:layout_constraintTop_toBottomOf="@+id/flagImageView"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <Button
+      android:id="@+id/submitButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Next"
+      app:layout_constraintEnd_toEndOf="@+id/countryEditText"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/textView"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:id="@+id/scoreTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="10dp"
+      android:text="Score:  0"
+      android:textColor="@color/black"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toTopOf="@+id/divider3"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/attemptsTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:text="Attempts left: 10"
+      android:textColor="@color/black"
+      android:textSize="24sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/scoreTextView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.589"
+      app:layout_constraintStart_toEndOf="@+id/scoreTextView" />
+
+  <View
+      android:id="@+id/divider3"
+      android:layout_width="0dp"
+      android:layout_height="5dp"
+      android:layout_marginStart="1dp"
+      android:layout_marginTop="72dp"
+      android:layout_marginEnd="1dp"
+      android:background="@color/purple_500"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
